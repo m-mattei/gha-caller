@@ -1,0 +1,12 @@
+name: Simple Action
+
+on: [push]
+
+jobs:
+    hello-world:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+        - name: Run an external workflow
+          uses: https://github.com/m-mattei/github-actions-test/actions/workflows/hello.yml
