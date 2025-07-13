@@ -1,6 +1,7 @@
 name: Simple Action
 
-on: [push]
+on: [push, workflow_dispatch]
+
 
 jobs:
     hello-world:
@@ -9,4 +10,4 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v4
         - name: Run an external workflow
-          uses: https://github.com/m-mattei/github-actions-test/actions/workflows/hello.yml
+          uses: m-mattei/github-actions-test/.github/actions/hello@main
