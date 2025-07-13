@@ -10,4 +10,4 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v4
         - name: Run an external workflow
-          uses: m-mattei/github-actions-test/.github/actions/hello@v1
+          uses: m-mattei/github-actions-test/.github/workflows/hello/action.yml@main
