@@ -7,5 +7,5 @@ jobs:
     hello-world:
       uses: m-mattei/github-actions-test/.github/workflows/hello.yml@main
       with:
-        message: 'Hello World'
+        message: ${{ github.repository }}
       
