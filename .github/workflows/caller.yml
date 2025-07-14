@@ -6,6 +6,7 @@ on: [push, workflow_dispatch]
 jobs:
     hello-world:
       uses: m-mattei/github-actions-test/.github/workflows/hello.yml@main
+      secrets: inherit
       with:
         message: 'Hello, World!'
       
