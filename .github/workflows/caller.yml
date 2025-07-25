@@ -7,6 +7,5 @@ jobs:
   hello-world:
     name: Call Hello Workflow!
     uses: m-mattei/github-actions-test/.github/workflows/hello.yml@main
-    secrets: inherit
     with:
       message: 'Hello, World!'
