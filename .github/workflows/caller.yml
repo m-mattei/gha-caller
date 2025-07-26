@@ -6,6 +6,10 @@ on:
       environment:
         description: 'Environment to deploy to'
         required: true
+        type: choice
+        options:
+          - dev
+          - staging
     
 jobs:
   hello-world:
